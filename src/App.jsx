@@ -7,8 +7,11 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Hero />
+      <div className='hero-content'>
+        <Header />
+        <Hero />
+      </div>
+
     </>
   )
 }

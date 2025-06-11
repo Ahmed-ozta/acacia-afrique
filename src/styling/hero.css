@@ -13,3 +13,26 @@
   height: 100%;
   object-fit: cover;
 }
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 30%;
+
+  width: 100%;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  width: 50%;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0.6em auto;
+}

@@ -1,0 +1,10 @@
+.hero-content {
+    position: relative;
+    overflow: hidden;
+    /* border-bottom:4px solid blue ; */
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.text-green{
+    color: #6ba55a;
+}
