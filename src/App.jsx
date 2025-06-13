@@ -4,6 +4,7 @@ import Header from './components/Header.jsx'
 import Hero from './components/Hero.jsx'
 import Services from './components/Services.jsx'
 import Solutions from './components/solutions.jsx'
+import Contact from './components/Contact-us.jsx'
 function App() {
 
 
@@ -15,6 +16,7 @@ function App() {
       </div>
       <Services />
       <Solutions />
+      <Contact />
 
     </>
   )

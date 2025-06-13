@@ -8,5 +8,10 @@
      height: 100vh;
 }
 .text-green{
-    color: rgb(107, 165, 90);
+    color: #4CAF50 ;
+}
+/* #4CAF50 */
+/* #6ba55a */
+.light-text{
+    font-weight:100;
 }
