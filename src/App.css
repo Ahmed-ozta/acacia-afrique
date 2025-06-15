@@ -1,17 +1,107 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .hero-content {
     position: relative;
     overflow: hidden;
     /* border-bottom:4px solid blue ; */
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-     height: 100vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    height: 100vh;
 }
-.text-green{
-    color: #4CAF50 ;
+
+.text-green {
+    color: #4CAF50;
 }
+
 /* #4CAF50 */
 /* #6ba55a */
-.light-text{
-    font-weight:100;
+.light-text {
+    font-weight: 100;
+}
+
+
+
+/* --------services------ */
+.services-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.services-container {
+    width: 95%;
+    text-align: center;
+}
+
+.services-container h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 100px;
+
+}
+
+.services-container p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    opacity: 0.6;
+}
+
+.service-cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* ----------service-------- */
+.service-card {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 550px;
+    border-radius: 16px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition-duration: 500ms;
+}
+
+.service-card:hover {
+    color: white;
+    background-color: #4CAF50;
+}
+
+.image-container {
+    width: 350px;
+    height: 65%;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+
+.service-card:hover .image-container img {
+    transform: translateX(-400px);
+
+}
+
+.image-container img {
+    width: 800px;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.service-card p {
+    font-size: 0.8rem;
+    margin: 0 20px;
+
 }

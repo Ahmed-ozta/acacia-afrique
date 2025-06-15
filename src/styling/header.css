@@ -1,53 +1,315 @@
 header {
     width: 100%;
-    height: 120px;
     display: flex;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 .default_header {
-    background: rgba(0, 0, 0, 4.3);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 7%, rgba(255, 255, 255, 0) 100%);
+    height: 120px;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
 }
 
 .scrolled_header {
     position: fixed;
-    background-color: #29275F;
-    top:0;
-    z-index: 3 ;
-
+    height: 90px;
+    background-color: #2F4F4F;
+    top: 0;
+    z-index: 1000;
+    animation: slide-bar 500ms ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.logo-header img {
-    height: 100px;
-}
-
+/* Container */
 .headerContainer {
     width: 95%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    position: relative;
 }
 
-nav ul {
+
+
+.logo-header img {
+    height: 80px;
+    transition: height 0.3s ease;
+}
+
+.scrolled_header .logo-header img {
+    height: 70px;
+}
+
+
+.desktop-nav {
+    display: block;
+}
+
+.desktop-nav ul {
     list-style-type: none;
     display: flex;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 15px 30px;
     border-radius: 50px;
     backdrop-filter: blur(15px);
+    margin: 0;
+    gap: 10px;
 }
 
-nav ul li {
-    padding: 10px;
+.desktop-nav ul li {
+    padding: 10px 15px;
 }
 
-nav ul li a {
+.desktop-nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
 
+.desktop-nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Scrolled header nav styles */
+.scrolled_header .desktop-nav ul {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 12px 25px;
+}
+
+.scrolled_header .desktop-nav ul li a {
+    font-size: 1rem;
+}
+
+.scrolled_header .desktop-nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+.scrolled_header .desktop-nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger Button */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.hamburger-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger-btn .hamburger-line.active:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 9px);
+}
+
+.hamburger-btn .hamburger-line.active:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-btn .hamburger-line.active:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -9px);
+}
+
+/* Mobile Navigation Overlay */
+.mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Mobile Navigation Menu */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 320px;
+    height: 100vh;
+    background: linear-gradient(135deg, #2F4F4F 0%, #1a3333 100%);
+    z-index: 999;
+    transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 100px 0 50px 0;
+    margin: 0;
+}
+
+.mobile-nav ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-nav ul li:last-child {
+    border-bottom: none;
+}
+
+.mobile-nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.mobile-nav ul li a:hover {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    padding-left: 40px;
+}
+
+.mobile-nav ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: #4CAF50;
+    transition: width 0.3s ease;
+}
+
+.mobile-nav ul li a:hover::before {
+    width: 4px;
+}
+
+/* Slide animation */
+@keyframes slide-bar {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger-btn {
+        display: flex;
+    }
+
+    .headerContainer {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    .scrolled_header .headerContainer {
+        width: 90%;
+    }
+
+    .default_header {
+        height: 80px;
+        padding: 0 15px;
+    }
+
+    .scrolled_header {
+        height: 70px;
+        padding: 0 15px;
+    }
+
+    .logo-header img {
+        height: 60px;
+    }
+
+    .scrolled_header .logo-header img {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerContainer {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    .mobile-nav {
+        width: 280px;
+        right: -280px;
+    }
+
+    .logo-header img {
+        height: 50px;
+    }
+
+    .scrolled_header .logo-header img {
+        height: 45px;
+    }
+
+    .hamburger-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hamburger-line {
+        width: 20px;
+        height: 2px;
+    }
+}
+
+
+
+body.menu-open {
+    overflow: hidden;
 }
