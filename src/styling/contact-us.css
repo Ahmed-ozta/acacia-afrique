@@ -1,0 +1,140 @@
+.contact-content {
+    background: linear-gradient(rgba(47, 79, 79, 0.8),
+            rgba(47, 79, 79, 0.8)),
+        url('public/contact-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    color: white;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+}
+
+.contact-content h1 {
+    font-size: 4rem;
+    margin-top: 8rem;
+}
+
+.links-contact-page {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    position: absolute;
+    bottom: -50px;
+}
+
+.links-contact-page ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links-contact-page ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgba(47, 79, 79, 0.8);
+
+}
+
+/* --------------- */
+.main-contact {
+    margin: 200px 0;
+}
+
+.main-top {
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.main-top .contact-card {
+    width: 30vw;
+    background: linear-gradient(rgba(47, 79, 79, 0.8),
+            rgba(47, 79, 79, 0.8)),
+        url('public/contact-card.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    height: 400px;
+    color: white;
+    border-radius: 2rem;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.main-top .contact-card p:first-child {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.main-top .contact-card .author p:first-child {
+    font-style: 400;
+    font-size: 1rem;
+}
+
+.main-top .contact-card .author p:last-child {
+    font-style: 100;
+    font-size: 1rem;
+}
+
+.formulaire-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 410px;
+
+}
+
+.formulaire-contact input,
+.formulaire-contact textarea {
+    width: 400px;
+    margin-bottom: 2rem;
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    transition: background-color 300ms ease-in-out;
+
+}
+
+.formulaire-contact input:focus,
+.formulaire-contact textarea:focus {
+    background-color: rgba(69, 117, 117, 0.8);
+    color: white;
+
+
+}
+
+.formulaire-contact textarea {
+    height: 8rem;
+    padding-top: 1rem;
+    resize: none;
+}
+
+.formulaire-contact input[type="submit"] {
+    width: 430px;
+    background-color: rgba(47, 79, 79, 0.8);
+    color: white;
+    margin-bottom: 0;
+    outline: none;
+    border: none;
+}
+
+.formulaire-contact input[type="submit"]:hover,
+.formulaire-contact input[type="submit"]:focus {
+    cursor: pointer;
+    background-color: hsla(180, 25%, 35%, 0.8);
+}
+
+.formulaire-contact h3 {
+    font-size: 2rem;
+    margin: 0;
+    color: rgba(47, 79, 79, 0.8);
+}
