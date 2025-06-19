@@ -138,3 +138,67 @@
     margin: 0;
     color: rgba(47, 79, 79, 0.8);
 }
+
+.google-map-container {
+    width: 95%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.google-map-container h3 {
+    font-size: 2rem;
+    color: rgba(47, 79, 79, 0.8);
+}
+
+.google-map-container p {
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.google-map {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+
+@media (max-width: 950px) {
+    .main-top {
+        flex-direction: column;
+        height: 1200px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .main-top .contact-card {
+        width: 350px;
+    }
+
+}
+
+@media (max-width: 610px) {
+    .links-contact-page {
+        display: none;
+    }
+
+    .contact-content h1 {
+
+        margin-top: 4rem;
+    }
+
+    .formulaire-contact {
+        width: 90vw;
+    }
+
+
+    .formulaire-contact input,
+    .formulaire-contact textarea {
+        width: 80vw;
+    }
+
+    .formulaire-contact input[type="submit"] {
+        width: 90vw;
+    }
+    .main-top .contact-card{
+        width: 80vw;
+    }
+}
