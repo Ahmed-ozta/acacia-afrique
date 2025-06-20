@@ -1,7 +1,7 @@
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
-import ContactCard from "./components/ContactCard.jsx";
-import "./styling/contact-us.css"
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import ContactMap from "../components/ContactMap.jsx";
+import "../styling/contact-us.css"
 
 
 
@@ -21,6 +21,7 @@ function Contact_us() {
               <li><a href="">Services</a></li>
               <li><a href="">Solutions</a></li>
             </ul>
+
           </div>
         </div>
         <div className='main-contact'>
@@ -52,14 +53,19 @@ function Contact_us() {
             </div>
 
           </div>
-          <div className="contacts-cards">
-            <ContactCard />
-          </div>
-          <div className="google-map">
+          <div className="google-map-container">
+            <h3>Planning a visit?<br />Here's our location.</h3>
+            <p>Whether you're attending a scheduled meeting, workshop, <br />or just dropping by, use the following directions to reach our office.</p>
             {/* google map */}
+            <div className="google-map">
+              <ContactMap />
+            </div>
+
+
           </div>
 
         </div>
+
         <Footer />
       </div>
     </>

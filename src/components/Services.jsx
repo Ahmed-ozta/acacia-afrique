@@ -3,7 +3,7 @@ import Service from "./Service";
 function Services() {
 
     return (
-        <div className="services-div">
+        <div className="services-div" id="service">
             <div className="services-container">
 
                 <h2><span className="light-text">Les multiples facettes<br />​ de nos </span><span className="text-green">services</span></h2>

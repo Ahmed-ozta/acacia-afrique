@@ -1,5 +1,6 @@
 
 import { useEffect, useRef, useState } from "react";
+import { useLocation, useNavigate } from 'react-router-dom';
 import "../styling/header.css"
 
 function Header() {
@@ -23,6 +24,7 @@ function Header() {
             }
         };
 
+
         // Set initial class
         if (headerRef.current) {
             headerRef.current.classList.add("default_header");
@@ -35,6 +37,23 @@ function Header() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleSolutionClick = (e) => {
+        if (location.pathname !== '/') {
+            e.preventDefault();
+            navigate('/', { replace: true });
+            // Small delay to ensure navigation completes before scrolling
+            setTimeout(() => {
+                const element = document.getElementById('solution');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+        // If already on home page, let the default anchor behavior work
+    };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -53,11 +72,11 @@ function Header() {
 
                 <nav className="navbar desktop-nav">
                     <ul>
-                        <li><a href="#" onClick={closeMenu}>Accueil</a></li>
-                        <li><a href="#" onClick={closeMenu}>Identité</a></li>
-                        <li><a href="#" onClick={closeMenu}>Services</a></li>
-                        <li><a href="#" onClick={closeMenu}>Solutions</a></li>
-                        <li><a href="#" onClick={closeMenu}>Contactez-nous</a></li>
+                        <li><a href="/" onClick={closeMenu}>Accueil</a></li>
+                        <li><a href="/identite" onClick={closeMenu}>Identité</a></li>
+                        <li><a href="/#service" onClick={closeMenu}>Services</a></li>
+                        <li><a href="/#solution" onClick={() => { closeMenu(); handleSolutionClick() }}>Solutions</a></li>
+                        <li><a href="/contact" onClick={closeMenu}>Contactez-nous</a></li>
                     </ul>
                 </nav>
                 <button
@@ -78,11 +97,11 @@ function Header() {
             {/* Mobile Navigation Menu */}
             <nav className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
                 <ul>
-                    <li><a href="#" onClick={closeMenu}>Accueil</a></li>
-                    <li><a href="#" onClick={closeMenu}>Identité</a></li>
+                    <li><a href="/" onClick={closeMenu}>Accueil</a></li>
+                    <li><a href="/identite" onClick={closeMenu}>Identité</a></li>
                     <li><a href="#" onClick={closeMenu}>Services</a></li>
                     <li><a href="#" onClick={closeMenu}>Solutions</a></li>
-                    <li><a href="#" onClick={closeMenu}>Contactez-nous</a></li>
+                    <li><a href="/contact" onClick={closeMenu}>Contactez-nous</a></li>
                 </ul>
             </nav>
         </header>
