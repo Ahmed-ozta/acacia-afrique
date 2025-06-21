@@ -1,15 +1,15 @@
-
+import { useNavigate } from 'react-router-dom';
 import "../styling/service.css"
-function Service() {
-
-
+function Service({ bg_image, title, text, link }) {
+    const navigate = useNavigate();
+    // Formation​ Professionnelle​
     return (
-        <div className="service-card">
+        <div className="service-card" onClick={() => navigate(`${link}`)}>
             <div className="image-container">
-                <img src="public/service1.jpg" alt="Showcase" />
+                <img src={bg_image} alt="Showcase" />
             </div>
-            <h3>example  title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae autem explicabo quisquam, id architecto eveniet libero incidunt totam, dicta ab, itaque blanditiis optio. Maiores doloremque atque neque eius autem!</p>
+            <h3>{title}</h3>
+            <p>{text}</p>
         </div>
     )
 }

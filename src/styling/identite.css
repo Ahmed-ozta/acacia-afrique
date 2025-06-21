@@ -35,11 +35,13 @@
 
 }
 
-.identite-content .who-we-are-text {
+.identite-content .who-we-are-text,
+.identite-vision .vision-text {
     width: 50%;
 }
 
-.identite-content .who-we-are-text h3 {
+.identite-content .who-we-are-text h3,
+.identite-vision .vision-text h3 {
     font-size: 2rem;
     color: rgba(47, 79, 79, 0.8);
 }
@@ -60,6 +62,60 @@
     background-color: #45a049;
 }
 
+.identite-vision {
+    width: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.identite-vision .vision-image img {
+    width: 500px;
+    height: 350px;
+    border-radius: 2rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.vision-service {
+    display: flex;
+    align-items: center;
+}
+
+.vision-service:hover {
+    /* color: rgba(47, 79, 79, 0.8); */
+    color: #45a049;
+    cursor: pointer;
+
+}
+
+.vision-service:hover h4 {
+    font-weight: 800;
+
+}
+
+.vision-service:hover h4::after {
+    width: 100%;
+}
+
+.vision-service h4 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    font-weight: 100;
+    position: relative;
+}
+
+.vision-service h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #45a049;
+    width: 0%;
+    transition: width 300ms ease-in-out;
+}
 
 
 @media (max-width: 1000px) {
@@ -71,16 +127,20 @@
 }
 
 @media (max-width:950px) {
-    .identite-content {
+
+    .identite-content,
+    .identite-vision {
         flex-direction: column;
 
     }
 
-    .identite-content .who-we-are-text {
+    .identite-content .who-we-are-text,
+    .identite-vision .vision-text {
         width: 80%;
     }
 
-    .identite-content .who-we-are-image img {
+    .identite-content .who-we-are-image img,
+    .identite-vision .vision-image img {
         width: 100%;
     }
 }

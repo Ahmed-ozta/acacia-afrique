@@ -3,8 +3,6 @@ import Footer from "../components/Footer.jsx";
 import ContactMap from "../components/ContactMap.jsx";
 import "../styling/contact-us.css"
 
-
-
 function Contact_us() {
   return (
     <>

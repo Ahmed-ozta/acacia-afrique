@@ -1,7 +1,9 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import '../styling/identite.css'
+import '../styling/identite.css';
+import { FaArrowRight } from 'react-icons/fa';
 function Identite() {
+
 
 
     return (
@@ -25,6 +27,31 @@ function Identite() {
                     </div>
                 </div>
 
+            </div>
+            <div className="identite-content-container">
+                <div className="identite-vision">
+                    <div className="vision-text">
+                        <h3>Notre vision est ​ de propulser nos clients​ vers le succès​</h3>
+                        <p>Nous nous engageons à accompagner nos clients à chaque étape de leur parcours vers l'excellence.</p>
+                        <div className="vision-service" >
+                            <FaArrowRight />
+                            <h4>Consultation et Expertise</h4>
+                        </div>
+                        <div className="vision-service">
+                            <FaArrowRight />
+                            <h4>Formation Professionnelle</h4>
+                        </div>
+                        <div className="vision-service">
+                            <FaArrowRight />
+                            <h4>Solutions d'Intégration</h4>
+                        </div>
+
+                    </div>
+                    <div className="vision-image">
+                        <img src="public/vision-image.jpg" alt="makhedamach" />
+
+                    </div>
+                </div>
 
             </div>
             <Footer />
