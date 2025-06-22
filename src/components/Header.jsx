@@ -1,6 +1,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "../styling/header.css"
 
 function Header() {
@@ -72,11 +73,11 @@ function Header() {
 
                 <nav className="navbar desktop-nav">
                     <ul>
-                        <li><a href="/" onClick={closeMenu}>Accueil</a></li>
-                        <li><a href="/identite" onClick={closeMenu}>Identité</a></li>
-                        <li><a href="/#service" onClick={closeMenu}>Services</a></li>
-                        <li><a href="/#solution" onClick={() => { closeMenu(); handleSolutionClick() }}>Solutions</a></li>
-                        <li><a href="/contact" onClick={closeMenu}>Contactez-nous</a></li>
+                        <li><a onClick={closeMenu}><Link to="/">Accueil</Link></a></li>
+                        <li><a onClick={closeMenu}><Link to="/identite">Identité</Link></a></li>
+                        <li><a href="#services" onClick={closeMenu}>Services</a></li>
+                        <li><a href="#solutions" onClick={() => { closeMenu(); handleSolutionClick() }}>Solutions</a></li>
+                        <li><a onClick={closeMenu}><Link to="/contact">Contactez-nous</Link></a></li>
                     </ul>
                 </nav>
                 <button
@@ -97,11 +98,11 @@ function Header() {
             {/* Mobile Navigation Menu */}
             <nav className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
                 <ul>
-                    <li><a href="/" onClick={closeMenu}>Accueil</a></li>
-                    <li><a href="/identite" onClick={closeMenu}>Identité</a></li>
-                    <li><a href="#" onClick={closeMenu}>Services</a></li>
-                    <li><a href="#" onClick={closeMenu}>Solutions</a></li>
-                    <li><a href="/contact" onClick={closeMenu}>Contactez-nous</a></li>
+                    <li><a onClick={closeMenu}><Link to="/">Accueil</Link></a></li>
+                    <li><a onClick={closeMenu}><Link to="/identite">Identité</Link></a></li>
+                    <li><a href="#services" onClick={closeMenu}>Services</a></li>
+                    <li><a href="#solutions" onClick={() => { closeMenu(); handleSolutionClick() }}>Solutions</a></li>
+                    <li><a onClick={closeMenu}><Link to="/contact">Contactez-nous</Link></a></li>
                 </ul>
             </nav>
         </header>
