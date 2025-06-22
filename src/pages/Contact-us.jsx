@@ -14,7 +14,7 @@ function Contact_us() {
 
           <div className="links-contact-page">
             <ul>
-              <li><a href="">Acceuil</a></li>
+              <li><a href="/">Acceuil</a></li>
               <li><a href="">Identité </a></li>
               <li><a href="">Services</a></li>
               <li><a href="">Solutions</a></li>

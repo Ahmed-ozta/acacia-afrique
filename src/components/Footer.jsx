@@ -5,7 +5,7 @@ function Footer() {
         <footer>
             <div className="footer-container">
                 <div className="footer-logo">
-                    <img src="public/logo-acacia.png" alt="logo" />
+                    <img src="/acacia-afrique/logo-acacia.png" alt="logo" />
                 </div>
                 <div className="links-container">
                     <ul>
@@ -13,7 +13,7 @@ function Footer() {
                         <li><a href="">Services</a></li>
                         <li><a href="">Solutions</a></li>
                         <li><a href="">Contactez-nous</a></li>
-            
+
                     </ul>
                 </div>
                 <div className="social-media">

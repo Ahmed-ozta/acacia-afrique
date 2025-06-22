@@ -20,7 +20,7 @@ function Formation() {
                         <button><span>Contactez-nous</span></button>
                     </div>
                     <div className="who-we-are-image expertise-image">
-                        <img src="public/formation.jpg" alt="makhedamach" />
+                        <img src="/acacia-afrique/formation.jpg" alt="makhedamach" />
                         {/* <div class="image-gradient"></div> */}
 
                     </div>

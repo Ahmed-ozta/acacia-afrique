@@ -22,7 +22,7 @@ function Identite() {
                         <button><span>Contactez-nous</span></button>
                     </div>
                     <div className="who-we-are-image">
-                        <img src="public/identite-image.png" alt="makhedamach" />
+                        <img src="/acacia-afrique/identite-image.png" alt="makhedamach" />
 
                     </div>
                 </div>
@@ -48,7 +48,7 @@ function Identite() {
 
                     </div>
                     <div className="vision-image">
-                        <img src="public/vision-image.jpg" alt="makhedamach" />
+                        <img src="/acacia-afrique/vision-image.jpg" alt="makhedamach" />
 
                     </div>
                 </div>

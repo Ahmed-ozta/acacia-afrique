@@ -67,7 +67,7 @@ function Header() {
         <header ref={headerRef}>
             <div className="headerContainer">
                 <div className="logo-header">
-                    <img src="logo-acacia.png" alt="logo acacia afrique" />
+                    <img src="/acacia-afrique/logo-acacia.png" alt="logo acacia afrique" />
                 </div>
 
                 <nav className="navbar desktop-nav">

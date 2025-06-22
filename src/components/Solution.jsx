@@ -9,7 +9,7 @@ function Solution({ title,text }) {
             <p>{text}</p>
         </div>
         <div className='box-image'>
-            <img src="public/box-image.jpg" alt="solution image" />
+            <img src="/acacia-afrique/box-image.jpg" alt="solution image" />
         </div>
 
     </div>);

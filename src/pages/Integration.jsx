@@ -20,7 +20,7 @@ function Integration() {
                         <button><span>Contactez-nous</span></button>
                     </div>
                     <div className="who-we-are-image expertise-image">
-                        <img src="public/integration.jpg" alt="makhedamach" />
+                        <img src="/acacia-afrique/integration.jpg" alt="makhedamach" />
                         {/* <div class="image-gradient"></div> */}
 
                     </div>
