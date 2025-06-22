@@ -1,7 +1,7 @@
 .identite-hero {
     background: linear-gradient(rgba(47, 79, 79, 0.8),
             rgba(47, 79, 79, 0.8)),
-        url('public/identite-background.jpg');
+        url('/acacia-afrique/identite-background.jpg');
     background-size: cover;
     background-position: center;
     padding: 4rem 2rem;

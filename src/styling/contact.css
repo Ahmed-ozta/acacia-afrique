@@ -33,7 +33,7 @@
   background: linear-gradient(rgba(47, 79, 79, 0.8),
 
       rgba(47, 79, 79, 0.8)),
-    url('public/contact-image.jpg');
+    url('/acacia-afrique/contact-image.jpg');
   background-size: cover;
   background-position: center;
 
