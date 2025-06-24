@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import "../styling/footer.css"
 import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 function Footer() {
@@ -9,11 +10,10 @@ function Footer() {
                 </div>
                 <div className="links-container">
                     <ul>
-                        <li><a href="">identité</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Solutions</a></li>
-                        <li><a href="">Contactez-nous</a></li>
-
+                        <li><a><Link to="/identite">Identité</Link></a></li>
+                        <li><a><Link to="/#service">Services</Link></a></li>
+                        <li><a><Link to="/#solution">Solutions</Link></a></li>
+                        <li><a><Link to="/contact">Contactez-nous</Link></a></li>
                     </ul>
                 </div>
                 <div className="social-media">
@@ -28,24 +28,7 @@ function Footer() {
 
 
             </div>
-
         </footer>
     )
 }
 export default Footer;
-
-{/* <ul>
-                            <li><a href="">Solution ERP complète</a></li>
-                            <li><a href="">Gestion Comptable et Commerciale</a></li>
-                            <li><a href="">Ressources Humaines</a></li>
-                            <li><a href="">BI et Reporting</a></li>
-                        </ul> */}
-{/* <ul>
-                            <li><a href="">Consultation et Expertise</a></li>
-                            <li><a href="">Formation Professionnelle</a></li>
-                            <li><a href=
-                            
-                            {/* <ul>
-                            <li><a href="">Qui sommes-nous ?</a></li>
-                            <li><a href="">Notre Vision</a></li>
-                        </ul> */}

@@ -100,8 +100,8 @@ function Header() {
                 <ul>
                     <li><a onClick={closeMenu}><Link to="/">Accueil</Link></a></li>
                     <li><a onClick={closeMenu}><Link to="/identite">Identité</Link></a></li>
-                    <li><a href="/#service" onClick={closeMenu}>Services</a></li>
-                    <li><a href="/#solution" onClick={() => { closeMenu(); handleSolutionClick() }}>Solutions</a></li>
+                    <li><a href="/#service" onClick={closeMenu}><Link to="/#service">Services</Link></a></li>
+                    <li><a href="/#solution" onClick={() => { closeMenu(); handleSolutionClick() }}><Link to="/#solution">Solutions</Link></a></li>
                     <li><a onClick={closeMenu}><Link to="/contact">Contactez-nous</Link></a></li>
                 </ul>
             </nav>
