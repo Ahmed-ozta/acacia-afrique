@@ -6,7 +6,9 @@ function Footer() {
         <footer>
             <div className="footer-container">
                 <div className="footer-logo">
-                    <img src="/acacia-afrique/logo-acacia.png" alt="logo" />
+                    <img src="/acacia-afrique/logo-acacia.png" alt="logo" id="big-device" />
+                    <img src="/acacia-afrique/ASS-LOGO---fond-couleur.png" alt="logo" id="small-device" />
+
                 </div>
                 <div className="links-container">
                     <ul>
