@@ -2,7 +2,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #2F4F4F;
+    /* background-color: #2F4F4F; */
+    background-color: #0E125B;
+    /* #0E125B */
     color: white;
     padding-bottom: 100px;
 }
@@ -35,10 +37,10 @@
     gap: 2rem;
     padding: 2rem;
 }
+
 @media (max-width: 768px) {
-    .solutions-grid  {
+    .solutions-grid {
         display: flex;
         flex-direction: column;
     }
 }
-

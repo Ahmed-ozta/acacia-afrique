@@ -1,7 +1,8 @@
 .contact-content {
-    background: linear-gradient(rgba(47, 79, 79, 0.8),
-            rgba(47, 79, 79, 0.8)),
+    background: linear-gradient(rgba(14, 18, 91, 0.8),
+            rgba(14, 18, 91, 0.8)),
         url('/acacia-afrique/contact-banner.jpg');
+
     background-size: cover;
     background-position: center;
     padding: 4rem 2rem;
@@ -38,7 +39,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 600;
-    color: rgba(47, 79, 79, 0.8);
+    color: #0E125B;
 
 }
 
@@ -57,9 +58,12 @@
 
 .main-top .contact-card {
     width: 30vw;
-    background: linear-gradient(rgba(47, 79, 79, 0.8),
-            rgba(47, 79, 79, 0.8)),
+    background: linear-gradient(rgba(14, 18, 91, 0.8),
+            rgba(14, 18, 91, 0.8)),
         url('/acacia-afrique/contact-card.jpg');
+    /* background: linear-gradient(rgba(47, 79, 79, 0.8),
+            rgba(47, 79, 79, 0.8)),
+        url('/acacia-afrique/contact-card.jpg'); */
     background-size: cover;
     background-position: center;
     padding: 4rem 2rem;
@@ -106,7 +110,7 @@
 
 .formulaire-contact input:focus,
 .formulaire-contact textarea:focus {
-    background-color: rgba(69, 117, 117, 0.8);
+
     color: white;
 
 
@@ -120,7 +124,7 @@
 
 .formulaire-contact input[type="submit"] {
     width: 430px;
-    background-color: rgba(47, 79, 79, 0.8);
+    background-color: #0E125B;
     color: white;
     margin-bottom: 0;
     outline: none;
@@ -130,13 +134,13 @@
 .formulaire-contact input[type="submit"]:hover,
 .formulaire-contact input[type="submit"]:focus {
     cursor: pointer;
-    background-color: hsla(180, 25%, 35%, 0.8);
+    background-color: hsl(237, 73%, 41%)
 }
 
 .formulaire-contact h3 {
     font-size: 2rem;
     margin: 0;
-    color: rgba(47, 79, 79, 0.8);
+    color: #0E125B;
 }
 
 .google-map-container {
@@ -147,7 +151,7 @@
 
 .google-map-container h3 {
     font-size: 2rem;
-    color: rgba(47, 79, 79, 0.8);
+    color: #0E125B;
 }
 
 .google-map-container p {
@@ -198,7 +202,8 @@
     .formulaire-contact input[type="submit"] {
         width: 90vw;
     }
-    .main-top .contact-card{
+
+    .main-top .contact-card {
         width: 80vw;
     }
 }

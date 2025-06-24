@@ -2,6 +2,7 @@ import Header from "../components/Header.jsx";
 import Footer from "../components/Footer.jsx";
 import ContactMap from "../components/ContactMap.jsx";
 import "../styling/contact-us.css"
+import { Link } from "react-router-dom";
 
 function Contact_us() {
   return (
@@ -14,10 +15,10 @@ function Contact_us() {
 
           <div className="links-contact-page">
             <ul>
-              <li><a href="/">Acceuil</a></li>
-              <li><a href="">Identité </a></li>
-              <li><a href="">Services</a></li>
-              <li><a href="">Solutions</a></li>
+              <li><a><Link to="/identite">Identité</Link></a></li>
+              <li><a><Link to="/#service">Services</Link></a></li>
+              <li><a><Link to="/#solution">Solutions</Link></a></li>
+              <li><a><Link to="/contact">Contactez-nous</Link></a></li>
             </ul>
 
           </div>

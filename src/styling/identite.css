@@ -1,7 +1,10 @@
 .identite-hero {
-    background: linear-gradient(rgba(47, 79, 79, 0.8),
-            rgba(47, 79, 79, 0.8)),
+    background: linear-gradient(rgba(14, 18, 91, 0.8),
+            rgba(14, 18, 91, 0.8)),
         url('/acacia-afrique/identite-background.jpg');
+    /* background: linear-gradient(rgba(47, 79, 79, 0.8),
+            rgba(47, 79, 79, 0.8)),
+        url('/acacia-afrique/identite-background.jpg'); */
     background-size: cover;
     background-position: center;
     padding: 4rem 2rem;
@@ -43,7 +46,7 @@
 .identite-content .who-we-are-text h3,
 .identite-vision .vision-text h3 {
     font-size: 2rem;
-    color: rgba(47, 79, 79, 0.8);
+    color: #0E125B;
 }
 
 .identite-content .who-we-are-text button {

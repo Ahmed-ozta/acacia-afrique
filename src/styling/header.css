@@ -16,7 +16,8 @@ header {
 .scrolled_header {
     position: fixed;
     height: 90px;
-    background-color: #2F4F4F;
+    /* background-color: #2F4F4F; */
+    background-color: #0E125B;
     top: 0;
     z-index: 1000;
     animation: slide-bar 500ms ease;
@@ -171,7 +172,7 @@ header {
     right: -350px;
     width: 320px;
     height: 100vh;
-    background: linear-gradient(135deg, #2F4F4F 0%, #1a3333 100%);
+    background: linear-gradient(135deg, #0E125B 0%, #1a3333 100%);
     z-index: 999;
     transition: right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
