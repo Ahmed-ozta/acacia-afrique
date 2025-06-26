@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import "../styling/header.css"
 
 function Header() {
@@ -68,15 +69,14 @@ function Header() {
         <header ref={headerRef}>
             <div className="headerContainer">
                 <div className="logo-header">
-                    <img src="/acacia-afrique/logo-acacia.png" alt="logo acacia afrique" />
+                    <Link to="/"><img src="/acacia-afrique/logo-acacia.png" alt="logo acacia afrique" /></Link>
                 </div>
-
                 <nav className="navbar desktop-nav">
                     <ul>
                         <li><a onClick={closeMenu}><Link to="/">Accueil</Link></a></li>
                         <li><a onClick={closeMenu}><Link to="/identite">Identité</Link></a></li>
-                        <li><a onClick={closeMenu}><Link to="/#service">Services</Link></a></li>
-                        <li><a onClick={() => { closeMenu(); handleSolutionClick() }}><Link to="/#solution">Solutions</Link></a></li>
+                        <li><a onClick={closeMenu}><HashLink smooth to="/#service">Services</HashLink></a></li>
+                        <li><a onClick={() => { closeMenu(); handleSolutionClick() }}><HashLink smooth to="/#solution">Solutions</HashLink></a></li>
                         <li><a onClick={closeMenu}><Link to="/contact">Contactez-nous</Link></a></li>
                     </ul>
                 </nav>
@@ -100,8 +100,8 @@ function Header() {
                 <ul>
                     <li><a onClick={closeMenu}><Link to="/">Accueil</Link></a></li>
                     <li><a onClick={closeMenu}><Link to="/identite">Identité</Link></a></li>
-                    <li><a href="/#service" onClick={closeMenu}><Link to="/#service">Services</Link></a></li>
-                    <li><a href="/#solution" onClick={() => { closeMenu(); handleSolutionClick() }}><Link to="/#solution">Solutions</Link></a></li>
+                    <li><a onClick={closeMenu}><HashLink smooth to="/#service">Services</HashLink></a></li>
+                    <li><a onClick={() => { closeMenu(); handleSolutionClick() }}><HashLink smooth to="/#solution">Solutions</HashLink></a></li>
                     <li><a onClick={closeMenu}><Link to="/contact">Contactez-nous</Link></a></li>
                 </ul>
             </nav>

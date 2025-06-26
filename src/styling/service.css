@@ -13,7 +13,7 @@
     color: white;
     /* background-color: #4CAF50; */
     background-color: #0E125B;
-    cursor:pointer
+    cursor: pointer
 }
 
 .image-container {
@@ -39,7 +39,7 @@
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 30px;
 }
 
@@ -47,4 +47,20 @@
     font-size: 0.9rem;
     margin: 0 30px;
 
+}
+
+@media (max-width:350px) {
+    .service-card {
+        width: 320px;
+
+
+    }
+
+    .image-container img {
+        width: 750px;
+    }
+
+    .image-container {
+        width: 320px;
+    }
 }

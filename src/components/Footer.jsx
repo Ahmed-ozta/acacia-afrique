@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import "../styling/footer.css"
 import { FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa';
 function Footer() {
@@ -6,15 +7,15 @@ function Footer() {
         <footer>
             <div className="footer-container">
                 <div className="footer-logo">
-                    <img src="/acacia-afrique/logo-acacia.png" alt="logo" id="big-device" />
-                    <img src="/acacia-afrique/ASS-LOGO---fond-couleur.png" alt="logo" id="small-device" />
-
+                    <Link to="/"><img src="/acacia-afrique/logo-acacia.png" alt="logo" id="big-device" /></Link>
+                    <Link to="/"><img src="/acacia-afrique/ASS-LOGO---fond-couleur.png" alt="logo" id="small-device" />
+                    </Link>
                 </div>
                 <div className="links-container">
                     <ul>
                         <li><a><Link to="/identite">Identité</Link></a></li>
-                        <li><a><Link to="/#service">Services</Link></a></li>
-                        <li><a><Link to="/#solution">Solutions</Link></a></li>
+                        <li><a><HashLink smooth to="/#service">Services</HashLink></a></li>
+                        <li><a><HashLink smooth to="/#solution">Solutions</HashLink></a></li>
                         <li><a><Link to="/contact">Contactez-nous</Link></a></li>
                     </ul>
                 </div>

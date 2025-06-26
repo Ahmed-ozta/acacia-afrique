@@ -5,18 +5,23 @@ import Identite from './pages/Identite';
 import Expertise from './pages/Expertise';
 import Formation from './pages/formation';
 import Integration from './pages/Integration';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact_us />} />
-            <Route path="/identite" element={<Identite />} />
-            <Route path="/expertise" element={<Expertise />} />
-            <Route path="/formation" element={<Formation />} />
-            <Route path="/integration" element={<Integration />} />
-        </Routes>
+        <>
+            <ScrollToTop />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/contact" element={<Contact_us />} />
+                <Route path="/identite" element={<Identite />} />
+                <Route path="/expertise" element={<Expertise />} />
+                <Route path="/formation" element={<Formation />} />
+                <Route path="/integration" element={<Integration />} />
+            </Routes>
+        </>
+
     );
 }
 

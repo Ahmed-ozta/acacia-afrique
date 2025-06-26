@@ -108,13 +108,6 @@
 
 }
 
-.formulaire-contact input:focus,
-.formulaire-contact textarea:focus {
-
-    color: white;
-
-
-}
 
 .formulaire-contact textarea {
     height: 8rem;

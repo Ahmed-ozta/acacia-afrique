@@ -3,6 +3,7 @@ import Footer from "../components/Footer.jsx";
 import ContactMap from "../components/ContactMap.jsx";
 import "../styling/contact-us.css"
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 function Contact_us() {
   return (
@@ -16,8 +17,8 @@ function Contact_us() {
           <div className="links-contact-page">
             <ul>
               <li><a><Link to="/identite">Identité</Link></a></li>
-              <li><a><Link to="/#service">Services</Link></a></li>
-              <li><a><Link to="/#solution">Solutions</Link></a></li>
+              <li><a><HashLink smooth to="/#service">Services</HashLink></a></li>
+              <li><a><HashLink smooth to="/#solution">Solutions</HashLink></a></li>
               <li><a><Link to="/contact">Contactez-nous</Link></a></li>
             </ul>
 
