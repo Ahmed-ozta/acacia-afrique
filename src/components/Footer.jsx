@@ -21,11 +21,14 @@ function Footer() {
                 </div>
                 <div className="social-media">
                     <h3>Contactez-nous</h3>
+
                     <div className="social-icons">
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61575998527747" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+                        <a href="https://www.linkedin.com/company/acacia-afrique-systeme/?viewAsMember=true" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                        <a href="https://www.instagram.com/acacia_afrique_systeme?igsh=cXV0bTVucXE0YnEw" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                     </div>
+                    <p>contact@acacia-afrique.com</p>
+
                 </div>
 
 

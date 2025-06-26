@@ -18,8 +18,6 @@ function Services() {
                     <Service bg_image="/acacia-afrique/Solutions-d'Intégration.jpg" title="Solutions​ d'Intégration" text="Simplification des processus opérationnels grâce à des solutions personnalisés." link="/integration" />
 
                 </div>
-                {/* i should change the image  */}
-
             </div>
 
 

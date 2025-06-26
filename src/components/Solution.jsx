@@ -2,7 +2,6 @@
 import '../styling/solution.css'
 function Solution({ title, text, img }) {
 
-    // public\gestion.jpg
     return (<div className='box' >
         <div className='box-content'>
             <h3>{title}</h3>

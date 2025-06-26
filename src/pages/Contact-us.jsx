@@ -56,11 +56,12 @@ function Contact_us() {
           <div className="google-map-container">
             <h3>Planning a visit?<br />Here's our location.</h3>
             <p>Whether you're attending a scheduled meeting, workshop, <br />or just dropping by, use the following directions to reach our office.</p>
+            <p>adresse : Espace el badie , bureau 33 , lotissement al yassamine route ain chkef , fes</p>
+
             {/* google map */}
             <div className="google-map">
               <ContactMap />
             </div>
-
 
           </div>
 
