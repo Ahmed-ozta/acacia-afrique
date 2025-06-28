@@ -3,6 +3,7 @@ import '../styling/identite.css';
 import "../styling/expertise.css"
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Link } from "react-router-dom";
 function Expertise() {
 
     return (
@@ -17,7 +18,7 @@ function Expertise() {
                     <div className="who-we-are-text  expertise-text ">
                         <h3>Expertise & Conseil​</h3>
                         <p> Chez Acacia, nous vous offrons bien plus que des solutions techniques ; nous vous guidons à travers les complexités de la transformation numérique avec des conseils sur mesure. Notre équipe d'experts analyse en profondeur vos processus d'affaires pour identifier les opportunités d'amélioration et vous propose des stratégies personnalisées qui correspondent à vos objectifs spécifiques.</p>
-                        <button><span>Contactez-nous</span></button>
+                        <Link to="/contact"><button><span>Contactez-nous</span></button></Link>
                     </div>
                     <div className="who-we-are-image expertise-image">
                         <img src="/acacia-afrique/expertise.jpg" alt="makhedamach" />

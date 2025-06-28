@@ -3,6 +3,7 @@ import '../styling/identite.css';
 import "../styling/expertise.css"
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Link } from "react-router-dom";
 function Integration() {
 
     return (
@@ -17,7 +18,7 @@ function Integration() {
                     <div className="who-we-are-text  expertise-text ">
                         <h3>Intégration</h3>
                         <p>Notre service d'intégration garantit une mise en place efficace des solutions choisies. De l'intégration de Sage à la configuration de solutions complémentaires, notre équipe technique assure une transition sans heurts, avec une attention particulière portée à la sécurité des données et à l'alignement avec vos processus existants.</p>
-                        <button><span>Contactez-nous</span></button>
+                        <Link to="/contact"><button><span>Contactez-nous</span></button></Link>
                     </div>
                     <div className="who-we-are-image expertise-image">
                         <img src="/acacia-afrique/integration.jpg" alt="makhedamach" />

@@ -60,7 +60,10 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+.vision-text a{
+    text-decoration: none;
+    color: inherit;
+}
 .identite-content .who-we-are-text button:hover {
     background-color: #45a049;
 }

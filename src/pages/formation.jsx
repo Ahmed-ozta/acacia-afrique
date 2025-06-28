@@ -3,6 +3,7 @@ import '../styling/identite.css';
 import "../styling/expertise.css"
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Link } from "react-router-dom";
 function Formation() {
 
     return (
@@ -17,7 +18,7 @@ function Formation() {
                     <div className="who-we-are-text  expertise-text ">
                         <h3>Formation​</h3>
                         <p> Pour assurer une transition fluide et efficace vers de nouveaux systèmes, Acacia propose des programmes de formation adaptés à tous les niveaux de compétence au sein de votre organisation. Nos formateurs spécialisés vous aident à maîtriser les solutions Sage et autres outils de gestion, assurant ainsi une utilisation optimale et une autonomie accrue de votre équipe.</p>
-                        <button><span>Contactez-nous</span></button>
+                        <Link to="/contact"><button><span>Contactez-nous</span></button></Link>
                     </div>
                     <div className="who-we-are-image expertise-image">
                         <img src="/acacia-afrique/formation.jpg" alt="makhedamach" />
